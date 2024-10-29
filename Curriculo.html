@@ -6,21 +6,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amanda Alves</title>
-    <img src="img/amanda.png" alt="Amanda" style="estilo.css">
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> <!--Adicionei a referÊncia ao uso do bootstrap-->
+
 
 </head>
 <body>
-    <header>
-        <h1>Amanda Alves</h1>
-    </header>
-    <nav>
-        <a href="Cabecalho.html" target="main">Perfil</a>
-        <a href="Formacao.html" target="main">Formação</a>
-        <a href="Experiencia.html" target="main">Experiência Profissional</a>
-        <a href="SoftSkills.html" target="main">Soft Skills</a>
-    </nav>
-    <iframe src="Cabecalho.html" name="main"></iframe>
+    <div class="container" style="margin-top: 60px;"> <!--Criei um container para delimitar o corpo da página-->
+        <header class="mb-4">
+            <h1 class="text-primary">Amanda Alves</h1>
+            <p class="lead">Estudante de Tecnologia, apaixonada por artes gráficas e ciência de dados.</p>
+            <img src="img/amanda.png" alt="Foto de Amanda" class="foto-perfil img-thumbnail rounded-circle"> <!--dei a imagem uma borda redonda, no outro código, eu não tinha conseguido-->
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> <!--Para fixar o menu no topo-->
+            <div class="container">
+              <a class="navbar-brand" href="curriculo.html">Amanda Alves</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"         aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="Cabecalho.html">Perfil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Formacao.html">Formação</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Experiencia.html">Experiência Profissional</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="SoftSkills.html">Soft Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Formulario.html">Contato</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    <iframe src="Cabecalho.html" name="main" class="embed-responsive embed-responsive-16by9"></iframe> <!--responsível-->
 
     <div class="social-links" style="estilo.css" >
     <a href="https://www.linkedin.com/in/amanda-alves-a29040279/" target="_blank">
@@ -32,8 +60,14 @@
     
 </div>
 
-</body>
+
 <footer>
-    <p class="copyright" style="estilo.css">© Copyright Amanda 2024</p>
+    <p class="text-center mt-5">© Copyright Amanda 2024</p> <!--Centralizei e adicionei uma margem-->
   </footer>
+<!--Script do Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
 </html>

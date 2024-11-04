@@ -1,73 +1,172 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
     <meta charset="UTF-8">
+    <title>Amanda Alves - Currículo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amanda Alves</title>
+    <!-- Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Css + Bootstrap -->
     <link rel="stylesheet" href="estilo.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> <!--Adicionei a referÊncia ao uso do bootstrap-->
-
-
+    <!-- Para a rolagem ficar mais suave -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
-    <div class="container" style="margin-top: 60px;"> <!--Criei um container para delimitar o corpo da página-->
-        <header class="mb-4">
+
+<!-- Navbar pata fixar o menu no topo -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Amanda Alves</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"         aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!--navegação -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#perfil">Perfil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#formacao">Formação</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experiencia">Experiência Profissional</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#softskills">Soft Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Formulario.html">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Cabeçalho -->
+<div class="container" style="margin-top: 70px;" id="home">
+    <!--Perfil -->
+    <section id="perfil" class="my-5">
+        <header class="text-center">
             <h1 class="text-primary">Amanda Alves</h1>
-            <p class="lead">Estudante de Tecnologia, apaixonada por artes gráficas e ciência de dados.</p>
-            <img src="img/amanda.png" alt="Foto de Amanda" class="foto-perfil img-thumbnail rounded-circle"> <!--dei a imagem uma borda redonda, no outro código, eu não tinha conseguido-->
+            <p class="lead">Estudante de Tecnologia, apaixonada por artes gráficas e ciência de dados</p>
+            <img src="img/amanda.png" alt="Foto de Amanda" class="foto-perfil img-thumbnail rounded-circle">
         </header>
+        <h2>Objetivos</h2>
+        <p>
+            Sou estudante da área de tecnologia, amante de artes gráficas e da ciência de dados. Atualmente, além da formação como tecnóloga,
+            busco ampliar minhas habilidades com formações adicionais, como o Curso de AWS (preparatório para certificação) e o curso de 
+            UI/UX Design. Possuo um perfil dinâmico e multidisciplinar, sempre motivado.
+            Minha paixão por artes gráficas e design me levou a explorar ferramentas como Adobe Photoshop, Illustrator e Figma, aplicando criatividade
+            em projetos visuais e de interface. Na ciência de dados, tenho interesse em técnicas de machine learning e análise preditiva, utilizando
+            Python.
+            Estou em busca de oportunidades que me permitam unir minhas habilidades técnicas e criativas, contribuindo para projetos 
+            desafiadores e aprendizado com profissionais experientes. Acredito na importância da educação continuada e no valor do trabalho 
+            colaborativo para alcançar resultados profissionais.
+        </p>
+        <h2>Dados:</h2>
+        <p><strong>Nome:</strong> Amanda Priscila Alves dos Santos</p>
+        <p><strong>Email:</strong> amanda.priscilaa10@gmail.com</p>
+        <p><strong>Telefone:</strong> (81) 8480-0589</p>
+        <p><strong>Endereço:</strong> Rua Águia Branca, 285, Nova Descoberta, Recife - Pernambuco</p>
+    </section>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> <!--Para fixar o menu no topo-->
-            <div class="container">
-              <a class="navbar-brand" href="curriculo.html">Amanda Alves</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"         aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="Cabecalho.html">Perfil</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Formacao.html">Formação</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Experiencia.html">Experiência Profissional</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="SoftSkills.html">Soft Skills</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Formulario.html">Contato</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+    <!--Formação -->
+    <section id="formacao" class="my-5">
+        <h2>Formação Acadêmica</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Formação Acadêmica</th>
+                    <th>Instituição de Ensino</th>
+                    <th>Ano</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tecnologia em Análise e Desenvolvimento de Sistemas</td>
+                    <td>SENAC</td>
+                    <td>02/2024 - Em andamento</td>
+                </tr>
+                <tr>
+                    <td>Bacharel em Sistemas da Informação</td>
+                    <td>UFMT</td>
+                    <td>06/2020 - 11/2023 (trancado)</td>
+                </tr>
+                <tr>
+                    <td>Técnico em Comunicação Visual</td>
+                    <td>ETEPAM</td>
+                    <td>02/2013 - 06/2014</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-    <iframe src="Cabecalho.html" name="main" class="embed-responsive embed-responsive-16by9"></iframe> <!--responsível-->
+    <!-- Experiência Profissional -->
+    <section id="experiencia" class="my-5">
+        <h2>Experiência Profissional</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Experiência Profissional</th>
+                    <th>Período</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Técnica de Comunicação Visual</td>
+                    <td>10/2014 - 02/2016</td>
+                </tr>
+                <tr>
+                    <td>Estágio em Comunicação Visual</td>
+                    <td>03/2013 - 03/2014</td>
+                </tr>
+                <tr>
+                    <td>Monitoria em Laboratório de Computação</td>
+                    <td>02/2011 - 11/2011</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-    <div class="social-links" style="estilo.css" >
-    <a href="https://www.linkedin.com/in/amanda-alves-a29040279/" target="_blank">
-    <img src="img/linkedin.png" alt="LinkedIn"></a>
-    <a href="https://github.com/AmandapasBB" target="_blank">
-    <img src="img/github.png" alt="GitHub"></a>
-    <a href="https://www.instagram.com/mandyalvesps/" target="_blank">
-    <img src="img/instagram.png" alt="Instagram"></a>
-    
+    <!--Soft Skills -->
+    <section id="softskills" class="my-5">
+        <h2>Soft Skills</h2>
+        <ul>
+            <li>Comunicação Eficiente</li>
+            <li>Trabalho em Equipe</li>
+            <li>Resolução de Problemas</li>
+            <li>Gestão de Tempo</li>
+            <li>Adaptabilidade</li>
+        </ul>
+    </section>
 </div>
 
+<!-- Redes sociais -->
+<footer class="text-center mt-5">
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/amanda-alves-a29040279/" target="_blank">
+            <img src="img/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/AmandapasBB" target="_blank">
+            <img src="img/github.png" alt="GitHub">
+        </a>
+        <a href="https://www.instagram.com/mandyalvesps/" target="_blank">
+            <img src="img/instagram.png" alt="Instagram">
+        </a>
+    </div>
+    <p>© 2024 Amanda Alves. Todos os direitos reservados.</p>
+</footer>
 
-<footer>
-    <p class="text-center mt-5">© Copyright Amanda 2024</p> <!--Centralizei e adicionei uma margem-->
-  </footer>
-<!--Script do Bootstrap-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Scripts do Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
+
